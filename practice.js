@@ -35,17 +35,16 @@ devMountainGoal = null;
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting() {
-  return "'Hello, ' + myName "
+function greeting(name) {
+  return 'Hello, ' + name
 }
 
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
-var newGreeting = function () {
-  return "'Hello, ' + myName "
-}
+var newGreeting = function (name) {
+  return 'Hello, ' + name
 
 
 //////////////////PROBLEM 8////////////////////
@@ -63,9 +62,9 @@ var groceries = ["apples","milk","eggs","bread"]
 //and goodBoy (a boolean).
 
 var dog = {
-  name: 'Hank'
-  color: 'brown'
-  age: 9
+  name: 'Hank',
+  color: 'brown',
+  age: 9,
   goodBoy: true
 }
 
@@ -83,15 +82,17 @@ var devMountainClassPet = name
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-function nameCheck (Steven) {
-  console.log("What is up Steven?")
+function nameCheck(name) {
+  if (name==='Steven') {
+  return 'What is up ' + name + '?';
+} 
+ else if (name==='Bryan')  {
+  return 'Hey ' + name + '!';
+ }
+ else {
+ return 'Cool name, ' + name;
+ }
 }
- else if (name="Bryan") {
-  console.log("Hey Bryan!")
- }
- else if () {
- console.log("Cool name, (NAMEPARAM)");
- }
 
 //////////////////PROBLEM 11////////////////////
 
@@ -100,14 +101,13 @@ function nameCheck (Steven) {
 // The add function should return the two parameters added together
 
 function add(a,b) {
-  return (a+b);
+  return a+b;
 }
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-function add(mathSum)
-add(3,4)
+var mathSum = add(3,4);
 
 //////////////////PROBLEM 12////////////////////
 
@@ -119,17 +119,17 @@ add(3,4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder(color) {
-if ('red') {
-  console.log("red is a great color")
+if (color==='red') {
+  return 'red is a great color';
 }
-else if ('green') {
-  console.log("green is a solid favorite color")
+else if (color==='green') {
+  return 'green is a solid favorite color';
 }
-else if('black') {
-  console.log("so trendy")
+else if(color==='black') {
+  return 'so trendy';
 }
-else if(!='red',!='green',!='black') {
-  console.log("you need to evaluate your favorite color choice")
+else (!=='red',!=='green',!=='black') {
+  return 'you need to evaluate your favorite color choice'
 }
 }
 
@@ -155,16 +155,17 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+
+let globalScope = ['duck'];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "rubberDuck"];
+let bathroomScope = ['duck','rubberDuck'];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ['duck','sailorDuck','rubberDuck'];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ['duck','realDuck'];
 
 //////////////////PROBLEM 14////////////////////
 
