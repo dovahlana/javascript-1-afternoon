@@ -44,7 +44,7 @@ function greeting(name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 var newGreeting = function (name) {
-  return 'Hello, ' + name
+  return 'Hello, ' + name }
 
 
 //////////////////PROBLEM 8////////////////////
@@ -71,7 +71,7 @@ var dog = {
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-var devMountainClassPet = name
+let devMountainClassPet = dog.name
 
 //////////////////PROBLEM 10////////////////////
 
@@ -128,7 +128,7 @@ else if (color==='green') {
 else if(color==='black') {
   return 'so trendy';
 }
-else (!=='red',!=='green',!=='black') {
+else {
   return 'you need to evaluate your favorite color choice'
 }
 }
